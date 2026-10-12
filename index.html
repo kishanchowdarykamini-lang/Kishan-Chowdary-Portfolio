@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0f">
+<meta name="description" content="Kishan Chowdary Kamini: creative designer, video editor and Meta ads creative specialist. Portfolio of ad results, websites, posters and app store creatives.">
+<title>Kishan Chowdary Kamini — Creative Designer & Performance Marketer</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0f;--card:#14141b;--line:#262633;--tx:#f4f4f7;--mu:#9a9aab;--ac:#ff3d6e;--ac2:#ff7a45;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'DM Sans',system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:'Syne','DM Sans',sans-serif;line-height:1.1;margin:0}
+a{color:inherit;text-decoration:none}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:rgba(11,11,15,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-family:Syne,sans-serif;font-weight:800}.logo i{color:var(--ac);font-style:normal}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-size:14px;color:var(--mu)}
+nav ul a:hover{color:var(--tx)}
+
+.btn{display:inline-block;padding:12px 22px;border-radius:99px;font-weight:700;font-size:14px;border:1px solid var(--line);transition:.2s}
+.btn.p{background:linear-gradient(135deg,var(--ac),var(--ac2));border:0;color:#fff}
+.btn:hover{transform:translateY(-2px)}
+.hero{padding:90px 0 60px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:520px;height:520px;right:-140px;top:-120px;background:radial-gradient(circle,rgba(255,61,110,.25),transparent 65%);pointer-events:none}
+.tag{display:inline-block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);border:1px solid var(--line);padding:6px 14px;border-radius:99px;margin-bottom:22px}
+.hero h1{font-size:clamp(38px,7vw,78px);font-weight:800;max-width:860px}
+.hero h1 span,.g{background:linear-gradient(135deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mu);max-width:560px;font-size:18px;margin:22px 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px}
+.st{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.st b{display:block;font-family:Syne,sans-serif;font-size:clamp(24px,4vw,34px)}
+.st span{font-size:13px;color:var(--mu)}
+@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
+section{padding:70px 0}
+.eyebrow{color:var(--ac);font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+h2{font-size:clamp(28px,5vw,44px);margin:8px 0 12px}
+.sub{color:var(--mu);max-width:600px;margin:0 0 36px}
+.grid{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:860px){.g3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.g3,.g2{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;transition:.25s}
+.card:hover{border-color:var(--ac);transform:translateY(-4px)}
+.card h3{font-size:22px;margin-bottom:6px}
+.card p{color:var(--mu);font-size:15px;margin:8px 0 0}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+.kv b{display:block;font-family:Syne,sans-serif;font-size:22px}
+.kv span{font-size:12px;color:var(--mu)}
+.pill{display:inline-block;font-size:11px;padding:4px 10px;border-radius:99px;background:rgba(255,61,110,.12);color:var(--ac);font-weight:700;margin-bottom:12px}
+.thumb{height:150px;border-radius:14px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;font-family:Syne,sans-serif;font-size:42px;font-weight:800;color:#fff}
+.t1{background:linear-gradient(135deg,#b8860b,#f5d76e)}.t2{background:linear-gradient(135deg,#1f3a93,#4da3ff)}
+.t3{background:linear-gradient(135deg,#5b3a29,#c68b59)}.t4{background:linear-gradient(135deg,#0f7b5f,#5be3a8)}
+.link{color:var(--ac);font-weight:700;font-size:14px;display:inline-block;margin-top:14px}
+.feat{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center;background:linear-gradient(135deg,#1a1020,#14141b);border:1px solid var(--line);border-radius:26px;padding:36px}
+@media(max-width:760px){.feat{grid-template-columns:1fr;padding:24px}}
+.mock{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:18px}
+.bar{height:10px;border-radius:6px;background:linear-gradient(90deg,var(--ac),var(--ac2));margin:10px 0}
+.ph{aspect-ratio:1;border:1.5px dashed var(--line);border-radius:16px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--mu);font-size:13px;padding:12px}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.skills span{border:1px solid var(--line);border-radius:99px;padding:8px 16px;font-size:14px}
+footer{border-top:1px solid var(--line);padding:50px 0;text-align:center;color:var(--mu);font-size:14px}
+@keyframes up{from{opacity:0;transform:translateY(24px)}}.rv{animation:up .7s both}
+[hidden]{display:none!important}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.f{font:inherit;font-size:14px;color:var(--mu);background:transparent;border:1px solid var(--line);border-radius:99px;padding:8px 18px;cursor:pointer}
+.f.on{background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;border-color:transparent;font-weight:700}
+.gal{columns:3;column-gap:18px}
+@media(max-width:860px){.gal{columns:2}}
+@media(max-width:480px){.gal{column-gap:10px}.work{margin-bottom:10px}.work figcaption{padding:28px 10px 8px}.work figcaption b{font-size:12px}.work figcaption span{display:none}}
+.work{margin:0 0 18px;break-inside:avoid;position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--card);cursor:zoom-in}
+.work img{display:block;width:100%;height:auto;transition:.4s}
+.work:hover img{transform:scale(1.04)}
+.work figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.85));display:flex;flex-direction:column;opacity:0;transition:.3s;pointer-events:none}
+.work figcaption b{font-size:15px}.work figcaption span{font-size:12px;color:#ccc}
+.work:hover figcaption{opacity:1}
+@media(hover:none){.work figcaption{opacity:1}}
+.gal .ph{aspect-ratio:4/5;margin-bottom:18px;break-inside:avoid}
+.lb{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.94);display:flex;align-items:center;justify-content:center;padding:calc(20px + env(safe-area-inset-top,0px)) 20px calc(20px + env(safe-area-inset-bottom,0px));cursor:zoom-out}
+.lb img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px}
+.lb button{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:18px;background:var(--card);color:var(--tx);border:1px solid var(--line);width:40px;height:40px;border-radius:50%;font-size:22px;cursor:pointer}
+.app{margin-bottom:46px}.app h3{font-size:24px;margin-bottom:14px}
+.shots{display:flex;gap:14px;overflow-x:auto;padding-bottom:10px}
+.shot{flex:0 0 160px;aspect-ratio:9/19;border:1.5px dashed var(--line);border-radius:22px;display:flex;align-items:center;justify-content:center;color:var(--mu);font-size:12px;text-align:center;padding:10px}
+.shots img{flex:0 0 auto;height:440px;width:auto;border-radius:14px;border:1px solid var(--line);cursor:zoom-in;display:block}
+.vl{font-size:12px;color:var(--mu);margin:0 0 8px;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:600px){.shots img{height:360px}}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero-photo{position:relative;justify-self:center;width:100%;max-width:360px}
+.frame{padding:3px;border-radius:200px 200px 28px 28px;background:linear-gradient(160deg,var(--ac),var(--ac2) 45%,rgba(255,255,255,.08) 85%);box-shadow:0 30px 80px -24px rgba(255,61,110,.45)}
+.frame img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:197px 197px 25px 25px}
+.badge{position:absolute;left:-18px;bottom:24px;background:rgba(20,20,27,.92);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;padding:10px 16px;display:flex;flex-direction:column}
+.badge b{font-family:Syne,sans-serif;font-size:14px}.badge span{font-size:12px;color:var(--mu)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:42px;height:38px;cursor:pointer;flex-direction:column;justify-content:center;gap:6px;padding:0 10px}
+.burger span{display:block;height:2px;background:var(--tx);border-radius:2px}
+@media(max-width:900px){.burger{display:flex}
+nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:6px 20px 12px}
+nav ul.open{display:flex}nav ul li a{display:block;padding:12px 0;font-size:16px}
+.hero-grid{grid-template-columns:1fr;gap:34px}.hero-photo{order:-1;max-width:230px;justify-self:start}.badge{left:14px;bottom:-14px}
+.hero{padding:44px 0 40px}.hero p{font-size:16px}.stats{margin-top:40px}section{padding:52px 0}}
+.s2{grid-column:span 2}@media(max-width:600px){.s2{grid-column:auto}}
+.vid .play{height:150px;border-radius:14px;background:linear-gradient(135deg,#2a1020,#14141b);display:flex;align-items:center;justify-content:center;margin-bottom:18px;border:1px solid var(--line)}
+.play i{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--ac),var(--ac2));position:relative}
+.play i::after{content:"";position:absolute;left:23px;top:17px;border-left:18px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.shots{scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}.shots img{scroll-snap-align:start}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="w"><a class="logo" href="#top">Kishan<i>.</i></a>
+<button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+<ul id="menu"><li><a href="#ads">Meta Ads</a></li><li><a href="#sites">Websites</a></li><li><a href="#myflo">Myflo</a></li><li><a href="#design">Design</a></li><li><a href="#/appstore">App Store</a></li><li><a href="#video">Video</a></li><li><a href="#toolkit">Toolkit</a></li><li><a href="#contact" class="g">Hire me</a></li></ul></div></nav>
+<div id="home">
+
+<header class="hero" id="top"><div class="w"><div class="hero-grid"><div class="hero-copy">
+<span class="tag">Open to opportunities · Andhra Pradesh, India</span>
+<h1>Design that looks good. <span>Ads that perform.</span></h1>
+<p>I'm Kishan Chowdary Kamini, a creative designer at New Age. I design and edit Meta ad creatives, create video content, build websites and tools, and track the numbers to find what wins.</p>
+<div class="cta"><a class="btn p" href="#ads">See my results</a><a class="btn" href="#contact">Get in touch</a></div>
+</div><div class="hero-photo"><div class="frame"><img src="images/profile.jpg" alt="Portrait of Kishan Chowdary Kamini"></div><div class="badge"><b>Kishan Chowdary Kamini</b><span>Creative Designer &middot; New Age</span></div></div></div>
+<div class="stats">
+<div class="st"><b class="g">₹3.9L+</b><span>Ad spend behind my creatives</span></div>
+<div class="st"><b class="g">2,300+</b><span>Mobile app installs driven</span></div>
+<div class="st"><b class="g">4.2L+</b><span>Impressions delivered</span></div>
+<div class="st"><b class="g">49</b><span>Ads tested in one campaign</span></div>
+</div></div></header>
+
+<section id="ads"><div class="w">
+<span class="eyebrow">Meta Ads</span><h2>Creative-led campaigns, real numbers</h2>
+<p class="sub">Three campaigns, two objectives: app installs and lead generation. Each one started with creative testing.</p>
+<div class="grid g3">
+<div class="card rv"><span class="pill">App installs</span><h3>iGrammar</h3><p>Grammar and keyboard app, scaled through creative-led Meta campaigns.</p>
+<div class="kv"><div><b class="g">1,722</b><span>Installs</span></div><div><b class="g">₹184.52</b><span>Blended cost per install</span></div><div><b>₹3,17,739</b><span>Total spend</span></div><div><b>3,41,369</b><span>Impressions</span></div></div></div>
+<div class="card rv"><span class="pill">App installs</span><h3>My Love App</h3><p>A relationship app for couples. 49 ad variations tested to compare visual approaches and messaging.</p>
+<div class="kv"><div><b class="g">594</b><span>Installs</span></div><div><b class="g">₹125</b><span>Avg cost per install</span></div><div><b>₹74,248</b><span>Total spend</span></div><div><b>71,193</b><span>Impressions</span></div></div></div>
+<div class="card rv"><span class="pill">Lead generation</span><h3>RM Digital</h3><p>Philippines-based digital business. Messaging ads that start conversations with prospects.</p>
+<div class="kv"><div><b class="g">135</b><span>Conversations</span></div><div><b class="g">₹22.82</b><span>Cost per conversation</span></div><div><b>₹3,081</b><span>Total spend</span></div><div><b>8,534</b><span>People reached</span></div></div></div>
+</div></div></section>
+
+<section id="myflo"><div class="w">
+<div class="feat rv"><div>
+<span class="eyebrow">Built by me</span><h2>Myflo</h2>
+<p class="sub" style="margin-bottom:20px">A Meta ads creative performance tracker I built for my team. It shows which creatives and angles are winning, so decisions come from data, not guesses. I started building software with no coding background.</p>
+<a class="btn p" href="https://myflo.in/" target="_blank" rel="noopener">Open myflo.in ↗</a></div>
+<div class="mock"><small style="color:var(--mu)">Creative performance</small>
+<div class="bar" style="width:92%"></div><div class="bar" style="width:74%;opacity:.8"></div><div class="bar" style="width:58%;opacity:.6"></div><div class="bar" style="width:36%;opacity:.4"></div>
+</div>
+</div></div></section>
+
+<section id="sites"><div class="w">
+<span class="eyebrow">Web</span><h2>Websites I've built</h2>
+<p class="sub">Live, deployed projects for different industries. Open any of them.</p>
+<div class="grid g2">
+<a class="card rv" href="https://golden-glow-salon.vercel.app/" target="_blank" rel="noopener"><div class="thumb t1">GG</div><h3>Golden Glow Salon</h3><p>Salon website to showcase services and attract bookings.</p><span class="link">Visit site ↗</span></a>
+<a class="card rv" href="https://driveeasy-car-rentals.vercel.app/" target="_blank" rel="noopener"><div class="thumb t2">DE</div><h3>DriveEasy Car Rentals</h3><p>Car rental website with a clear, conversion-focused layout.</p><span class="link">Visit site ↗</span></a>
+<a class="card rv" href="https://brew-haven-cafe-six.vercel.app/" target="_blank" rel="noopener"><div class="thumb t3">BH</div><h3>Brew Haven Café</h3><p>Warm, menu-first website for a neighbourhood café.</p><span class="link">Visit site ↗</span></a>
+<a class="card rv" href="https://gym-circle-eosin.vercel.app/" target="_blank" rel="noopener"><div class="thumb t4">GC</div><h3>Gym Circle</h3><p>Gym tracker web app for logging workouts and progress.</p><span class="link">Visit site ↗</span></a>
+</div></div></section>
+
+<section id="apps"><div class="w">
+<span class="eyebrow">App Store &amp; Brands</span><h2>Design for apps and brands</h2>
+<p class="sub">At New Age I design App Store listing screenshots that turn store visits into installs, alongside my Meta ads work.</p>
+<div class="grid g2">
+<div class="card rv"><span class="pill">App Store listings</span><h3>Listing screenshots for many apps</h3><p>Screenshot sets I designed for apps on the App Store.</p><div class="skills"><span>iGrammar</span><span>My Love</span><span>AI Chat</span><span>Currency Calculator</span><span>QR &amp; Barcode Generator</span></div><a class="link" href="#/appstore">View all listing screenshots &rarr;</a></div>
+<div class="card rv"><span class="pill">Brand work</span><h3>Naman Nissan &amp; MILER</h3><p>Design work for an automotive brand and a clothing brand.</p>
+<div class="skills"><span>Naman Nissan</span><span>MILER (clothing)</span></div></div>
+</div></div></section>
+
+<section id="video"><div class="w">
+<span class="eyebrow">Content &amp; Video</span><h2>Content creator and video editor</h2>
+<p class="sub">Along with design, I record content videos and edit them myself, from shooting to the final cut. Here are a few edits.</p>
+<div class="grid g3">
+<a class="card vid rv" href="https://youtu.be/iTRFg5OwnOU" target="_blank" rel="noopener"><div class="play"><i></i></div><span class="pill">YouTube</span><h3>Premiere Pro Show Reel</h3><p>A quick look at my editing work.</p><span class="link">Watch reel &#8599;</span></a>
+<a class="card vid rv" href="https://drive.google.com/file/d/1AJ3j26-VUDvToB5apCZSvRrIuziVuLDs/view?usp=sharing" target="_blank" rel="noopener"><div class="play"><i></i></div><span class="pill">Short edit</span><h3>Alchemist: Survival Story</h3><p>A short-form story edit.</p><span class="link">Watch video &#8599;</span></a>
+<a class="card vid rv" href="https://drive.google.com/file/d/1Og0U7QblAD9j8iqB2ocuJntPWct4dwDm/view?usp=sharing" target="_blank" rel="noopener"><div class="play"><i></i></div><span class="pill">Brand video</span><h3>MILER: Return &amp; Exchange</h3><p>Brand video for the clothing label MILER.</p><span class="link">Watch video &#8599;</span></a>
+</div></div></section>
+
+<section id="design"><div class="w">
+<span class="eyebrow">Graphic design</span><h2>Selected design work</h2>
+<p class="sub">Movie posters, brand ads and event posters. Tap any piece to view it larger.</p>
+<div class="filters"><button class="f on" data-f="all">All</button><button class="f" data-f="movie">Movie Posters</button><button class="f" data-f="brand">Brand Ads</button><button class="f" data-f="event">Events</button></div>
+<div class="gal" id="gal">
+<figure class="work rv" data-cat="movie"><img src="images/animal.jpg" alt="ANIMAL - Movie poster"><figcaption><b>ANIMAL</b><span>Movie poster</span></figcaption></figure>
+<figure class="work rv" data-cat="event"><img src="images/nrithya-2025.jpg" alt="Nrithya 2025 - KL University Dance Club"><figcaption><b>Nrithya 2025</b><span>KL University Dance Club</span></figcaption></figure>
+<figure class="work rv" data-cat="movie"><img src="images/sita-ramam.jpg" alt="Sita Ramam - Movie poster"><figcaption><b>Sita Ramam</b><span>Movie poster</span></figcaption></figure>
+<figure class="work rv" data-cat="brand"><img src="images/nissan-magnite-1.jpg" alt="Nissan Magnite - Naman Nissan feature post"><figcaption><b>Nissan Magnite</b><span>Naman Nissan feature post</span></figcaption></figure>
+<figure class="work rv" data-cat="brand"><img src="images/arks-mid-top.jpg" alt="ARKS Mid Top - Sneaker ad"><figcaption><b>ARKS Mid Top</b><span>Sneaker ad</span></figcaption></figure>
+<figure class="work rv" data-cat="movie"><img src="images/sathyam-sundaram.jpg" alt="Sathyam Sundaram - Movie poster"><figcaption><b>Sathyam Sundaram</b><span>Movie poster</span></figcaption></figure>
+<figure class="work rv" data-cat="brand"><img src="images/kk-construction.jpg" alt="KK Construction - Real estate ad"><figcaption><b>KK Construction</b><span>Real estate ad</span></figcaption></figure>
+<figure class="work rv" data-cat="event"><img src="images/arijit-singh.jpg" alt="Arijit Singh - Concert poster"><figcaption><b>Arijit Singh</b><span>Concert poster</span></figcaption></figure>
+<figure class="work rv" data-cat="brand"><img src="images/nissan-magnite-2.jpg" alt="Nissan Magnite Offer - Naman Nissan offer post"><figcaption><b>Nissan Magnite Offer</b><span>Naman Nissan offer post</span></figcaption></figure>
+
+</div></div></section>
+
+<section id="toolkit"><div class="w">
+<span class="eyebrow">Toolkit</span><h2>Tools I work with</h2>
+<p class="sub">My design and video stack, plus working knowledge of code.</p>
+<div class="grid g3">
+<div class="card rv"><h3>Photoshop</h3><p>Ad creatives, social posts, store screenshots.</p></div>
+<div class="card rv"><h3>Premiere Pro</h3><p>Video editing for content and ads.</p></div>
+<div class="card rv"><h3>After Effects</h3><p>Motion graphics and animation.</p></div>
+<div class="card rv"><h3>Figma</h3><p>UI design, layouts and mockups.</p></div>
+<div class="card rv s2"><span class="pill">Basic coding</span><h3>HTML · CSS · JavaScript</h3><p>Working knowledge, enough to build, tweak and deploy responsive websites like the ones above. Not an expert, and always learning.</p></div>
+</div></div></section>
+
+<section id="about"><div class="w"><div class="grid g2" style="align-items:start">
+<div class="rv"><span class="eyebrow">About</span><h2>Creative meets data</h2></div>
+<div class="rv"><p style="color:var(--mu);margin-top:0">I'm a creative professional from Andhra Pradesh working at New Age in graphic design, video editing and performance marketing. I also create content, recording and editing my own videos. I produce and test video and image creatives, try new angles, and track cost per result (CPR) to find winning ads. I also explore AI tools to make creative production faster.</p>
+<div class="skills"><span>Graphic Design</span><span>Video Editing</span><span>Content Creation</span><span>Social Media</span><span>Meta Ads Creatives</span><span>App Store Creatives</span><span>Basic Web Coding</span><span>AI Workflows</span></div></div>
+</div></div></section>
+
+</div>
+<div id="appstore" hidden><div class="w" style="padding-top:44px;padding-bottom:60px">
+<a class="link" href="#top" style="margin:0 0 22px">&larr; Back to portfolio</a><br>
+<span class="eyebrow">App Store Creatives</span><h2>App Store listing screenshots</h2>
+<p class="sub">Listing screenshots I designed at New Age to turn store visits into installs. Tap any screen to view it larger.</p>
+<div class="app"><h3>iGrammar</h3><div class="shots"><img src="images/appstore/igrammar-1.jpg" alt="iGrammar listing screenshot 1"><img src="images/appstore/igrammar-2.jpg" alt="iGrammar listing screenshot 2"><img src="images/appstore/igrammar-3.jpg" alt="iGrammar listing screenshot 3"><img src="images/appstore/igrammar-4.jpg" alt="iGrammar listing screenshot 4"><img src="images/appstore/igrammar-5.jpg" alt="iGrammar listing screenshot 5"><img src="images/appstore/igrammar-6.jpg" alt="iGrammar listing screenshot 6"><img src="images/appstore/igrammar-7.jpg" alt="iGrammar listing screenshot 7"></div></div>
+<div class="app"><h3>My Love</h3><p class="vl">Version 1</p><div class="shots"><img src="images/appstore/mylove-v1-1.jpg" alt="My Love listing screenshot 1"><img src="images/appstore/mylove-v1-2.jpg" alt="My Love listing screenshot 2"><img src="images/appstore/mylove-v1-3.jpg" alt="My Love listing screenshot 3"><img src="images/appstore/mylove-v1-4.jpg" alt="My Love listing screenshot 4"><img src="images/appstore/mylove-v1-5.jpg" alt="My Love listing screenshot 5"></div><p class="vl">Version 2</p><div class="shots"><img src="images/appstore/mylove-v2-1.jpg" alt="My Love listing screenshot 1"><img src="images/appstore/mylove-v2-2.jpg" alt="My Love listing screenshot 2"><img src="images/appstore/mylove-v2-3.jpg" alt="My Love listing screenshot 3"><img src="images/appstore/mylove-v2-4.jpg" alt="My Love listing screenshot 4"><img src="images/appstore/mylove-v2-5.jpg" alt="My Love listing screenshot 5"></div></div>
+<div class="app"><h3>AI Chat</h3><div class="shots"><img src="images/appstore/aichat-1.jpg" alt="AI Chat listing screenshot 1"><img src="images/appstore/aichat-2.jpg" alt="AI Chat listing screenshot 2"><img src="images/appstore/aichat-3.jpg" alt="AI Chat listing screenshot 3"><img src="images/appstore/aichat-4.jpg" alt="AI Chat listing screenshot 4"><img src="images/appstore/aichat-5.jpg" alt="AI Chat listing screenshot 5"><img src="images/appstore/aichat-6.jpg" alt="AI Chat listing screenshot 6"><img src="images/appstore/aichat-7.jpg" alt="AI Chat listing screenshot 7"></div></div>
+<div class="app"><h3>Currency Calculator</h3><div class="shots"><img src="images/appstore/currency-1.jpg" alt="Currency Calculator listing screenshot 1"><img src="images/appstore/currency-2.jpg" alt="Currency Calculator listing screenshot 2"><img src="images/appstore/currency-3.jpg" alt="Currency Calculator listing screenshot 3"><img src="images/appstore/currency-4.jpg" alt="Currency Calculator listing screenshot 4"><img src="images/appstore/currency-5.jpg" alt="Currency Calculator listing screenshot 5"><img src="images/appstore/currency-6.jpg" alt="Currency Calculator listing screenshot 6"></div></div>
+<div class="app"><h3>QR &amp; Barcode Generator</h3><div class="shots"><img src="images/appstore/qr-barcode-1.jpg" alt="QR and Barcode Generator listing screenshot 1"><img src="images/appstore/qr-barcode-2.jpg" alt="QR and Barcode Generator listing screenshot 2"><img src="images/appstore/qr-barcode-3.jpg" alt="QR and Barcode Generator listing screenshot 3"><img src="images/appstore/qr-barcode-4.jpg" alt="QR and Barcode Generator listing screenshot 4"><img src="images/appstore/qr-barcode-5.jpg" alt="QR and Barcode Generator listing screenshot 5"></div></div>
+</div></div>
+<footer id="contact"><div class="w">
+<h2 style="color:var(--tx)">Let's work together</h2>
+<p>Hiring or have a project? I'd love to hear from you.<br><a class="g" href="mailto:Kishanchowdarykamini@gmail.com">Kishanchowdarykamini@gmail.com</a></p>
+<div class="cta" style="justify-content:center;margin:20px 0 30px">
+<a class="btn p" href="mailto:Kishanchowdarykamini@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/kishan-chowdary-kamini-418a9029b/" target="_blank" rel="noopener">LinkedIn</a></div>
+© 2026 Kishan Chowdary Kamini</div></footer>
+
+<div class="lb" id="lb" hidden><img id="lbi" alt=""><button aria-label="Close">&times;</button></div>
+<script>
+var lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
+document.addEventListener('click',function(e){var i=e.target.closest('.work img,.shots img');if(i){lbi.src=i.src;lbi.alt=i.alt;lb.hidden=false}});
+lb.onclick=function(){lb.hidden=true};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.hidden=true});
+document.querySelectorAll('.f').forEach(function(b){b.onclick=function(){document.querySelectorAll('.f').forEach(function(x){x.classList.remove('on')});b.classList.add('on');var f=b.dataset.f;document.querySelectorAll('#gal [data-cat]').forEach(function(el){el.hidden=!(f==='all'||el.dataset.cat===f)})}});
+var bg=document.getElementById('burger'),mn=document.getElementById('menu');
+bg.onclick=function(){var o=mn.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+mn.onclick=function(e){if(e.target.closest('a')){mn.classList.remove('open');bg.setAttribute('aria-expanded',false)}};
+function route(){var h=location.hash,a=h.indexOf('#/appstore')===0;document.getElementById('home').hidden=a;document.getElementById('appstore').hidden=!a;if(a){window.scrollTo(0,0)}else if(h.length>1){var t=document.getElementById(h.slice(1));if(t)t.scrollIntoView()}else{window.scrollTo(0,0)}}
+addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
