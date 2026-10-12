@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0b0f">
+<script>try{if(!sessionStorage.getItem("intro")&&!matchMedia("(prefers-reduced-motion:reduce)").matches)document.documentElement.classList.add("intro-on")}catch(e){}</script>
 <meta name="description" content="Kishan Chowdary Kamini: creative designer, video editor and Meta ads creative specialist. Portfolio of ad results, websites, posters and app store creatives.">
 <title>Kishan Chowdary Kamini — Creative Designer & Performance Marketer</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -110,9 +111,51 @@ nav ul.open{display:flex}nav ul li a{display:block;padding:12px 0;font-size:16px
 a:focus-visible,button:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
 .shots{scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}.shots img{scroll-snap-align:start}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));z-index:60}
+#intro{display:none;position:fixed;inset:0;z-index:200;background:#07070b;align-items:center;justify-content:center;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:48px 48px;transition:transform .9s cubic-bezier(.77,0,.18,1),opacity .9s}
+.intro-on #intro{display:flex}.intro-on body{overflow:hidden}#intro.out{transform:translateY(-100%);opacity:.5}
+#ic{position:absolute;inset:0;width:100%;height:100%}
+.scan{position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,rgba(255,61,110,.8),transparent);animation:sc 3s linear infinite}
+@keyframes sc{to{transform:translateY(100vh)}}
+.ic-c{position:relative;text-align:center;padding:20px}
+.lw{position:relative;width:120px;height:120px;margin:0 auto 26px}
+.ring{width:120px;height:120px;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke:#ff3d6e;stroke-width:2;stroke-dasharray:340;stroke-dashoffset:340;animation:dr 1.6s .2s ease forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.mono{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:800 46px Syne,sans-serif;opacity:0;animation:li .6s .5s forwards}.mono i{color:var(--ac);font-style:normal}
+.nm{font:700 15px Syne,sans-serif;letter-spacing:.28em;margin:0 0 16px;white-space:nowrap}
+.nm span{opacity:0;display:inline-block;animation:li .4s forwards}
+@keyframes li{from{opacity:0;transform:translateY(8px);filter:blur(4px)}to{opacity:1;transform:none;filter:none}}
+.stt{font-size:13px;color:var(--mu);margin:0 0 18px;letter-spacing:.06em;min-height:20px}
+.pb{width:220px;height:3px;background:var(--line);border-radius:3px;margin:0 auto;overflow:hidden}
+.pb i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));animation:pb 3.2s ease-out forwards}
+@keyframes pb{to{width:100%}}
+#skip{position:absolute;top:calc(18px + env(safe-area-inset-top,0px));right:20px;background:none;border:1px solid var(--line);color:var(--mu);border-radius:99px;padding:7px 16px;font:inherit;font-size:13px;cursor:pointer}
+@media(max-width:480px){.nm{font-size:11px}}
+#cd,#cr{position:fixed;left:0;top:0;pointer-events:none;z-index:150;border-radius:50%;opacity:0;transition:opacity .3s}
+#cd{width:6px;height:6px;background:var(--ac)}
+#cr{width:34px;height:34px;border:1.5px solid rgba(255,61,110,.7);transition:opacity .3s,width .25s,height .25s,background .25s}
+#cr.h{width:58px;height:58px;background:rgba(255,61,110,.12)}
+.gal{columns:auto;display:flex;gap:18px;align-items:flex-start}
+.gcol{flex:1;min-width:0;display:flex;flex-direction:column;gap:18px}.gcol .work{margin:0}
+@media(max-width:480px){.gal,.gcol{gap:10px}}
+.ico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font:800 16px Syne,sans-serif;margin-bottom:14px;border:1px solid var(--line)}
+.subh{font-size:26px;margin:50px 0 6px}
+.vm{position:fixed;inset:0;z-index:30;background:rgba(0,0,0,.93);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:20px}
+.vbox{width:min(960px,100%);aspect-ratio:16/9;max-height:78vh;background:#000;border-radius:14px;overflow:hidden}
+.vbox iframe{width:100%;height:100%;border:0}
+.vm button{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:18px;background:var(--card);color:var(--tx);border:1px solid var(--line);width:40px;height:40px;border-radius:50%;font-size:22px;cursor:pointer}
+.hero::before{animation:drift 13s ease-in-out infinite alternate}
+.hero::after{content:"";position:absolute;width:420px;height:420px;left:-170px;bottom:-170px;background:radial-gradient(circle,rgba(255,122,69,.16),transparent 65%);pointer-events:none;animation:drift 15s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translate(70px,-50px) scale(1.15)}}
+.hero h1 span{background-image:linear-gradient(90deg,var(--ac),var(--ac2),var(--ac));background-size:200% 100%;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:-200% 0}}
+.badge{animation:fl 4.5s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-8px)}}
 </style>
 </head>
 <body>
+<div id="prog"></div>
+<div id="intro"><canvas id="ic"></canvas><div class="scan"></div><div class="ic-c"><div class="lw"><svg class="ring" viewBox="0 0 120 120"><circle cx="60" cy="60" r="54"/></svg><div class="mono">K<i>.</i></div></div><div class="nm" id="nm"></div><p class="stt" id="st">Initializing creative engine</p><div class="pb"><i></i></div></div><button id="skip">Skip</button></div>
 <nav><div class="w"><a class="logo" href="#top">Kishan<i>.</i></a>
 <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
 <ul id="menu"><li><a href="#ads">Meta Ads</a></li><li><a href="#sites">Websites</a></li><li><a href="#myflo">Myflo</a></li><li><a href="#design">Design</a></li><li><a href="#/appstore">App Store</a></li><li><a href="#video">Video</a></li><li><a href="#toolkit">Toolkit</a></li><li><a href="#contact" class="g">Hire me</a></li></ul></div></nav>
@@ -125,10 +168,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ac);outline-offset:
 <div class="cta"><a class="btn p" href="#ads">See my results</a><a class="btn" href="#contact">Get in touch</a></div>
 </div><div class="hero-photo"><div class="frame"><img src="images/profile.jpg" alt="Portrait of Kishan Chowdary Kamini"></div><div class="badge"><b>Kishan Chowdary Kamini</b><span>Creative Designer &middot; New Age</span></div></div></div>
 <div class="stats">
-<div class="st"><b class="g">₹3.9L+</b><span>Ad spend behind my creatives</span></div>
-<div class="st"><b class="g">2,300+</b><span>Mobile app installs driven</span></div>
-<div class="st"><b class="g">4.2L+</b><span>Impressions delivered</span></div>
-<div class="st"><b class="g">49</b><span>Ads tested in one campaign</span></div>
+<div class="st"><b class="g" data-to="3.9" data-dec="1" data-pre="₹" data-suf="L+">₹3.9L+</b><span>Ad spend behind my creatives</span></div>
+<div class="st"><b class="g" data-to="2300" data-suf="+">2,300+</b><span>Mobile app installs driven</span></div>
+<div class="st"><b class="g" data-to="4.2" data-dec="1" data-suf="L+">4.2L+</b><span>Impressions delivered</span></div>
+<div class="st"><b class="g" data-to="49">49</b><span>Ads tested in one campaign</span></div>
 </div></div></header>
 
 <section id="ads"><div class="w">
@@ -176,37 +219,43 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ac);outline-offset:
 <span class="eyebrow">Content &amp; Video</span><h2>Content creator and video editor</h2>
 <p class="sub">Along with design, I record content videos and edit them myself, from shooting to the final cut. Here are a few edits.</p>
 <div class="grid g3">
-<a class="card vid rv" href="https://youtu.be/iTRFg5OwnOU" target="_blank" rel="noopener"><div class="play"><i></i></div><span class="pill">YouTube</span><h3>Premiere Pro Show Reel</h3><p>A quick look at my editing work.</p><span class="link">Watch reel &#8599;</span></a>
-<a class="card vid rv" href="https://drive.google.com/file/d/1AJ3j26-VUDvToB5apCZSvRrIuziVuLDs/view?usp=sharing" target="_blank" rel="noopener"><div class="play"><i></i></div><span class="pill">Short edit</span><h3>Alchemist: Survival Story</h3><p>A short-form story edit.</p><span class="link">Watch video &#8599;</span></a>
-<a class="card vid rv" href="https://drive.google.com/file/d/1Og0U7QblAD9j8iqB2ocuJntPWct4dwDm/view?usp=sharing" target="_blank" rel="noopener"><div class="play"><i></i></div><span class="pill">Brand video</span><h3>MILER: Return &amp; Exchange</h3><p>Brand video for the clothing label MILER.</p><span class="link">Watch video &#8599;</span></a>
+<a class="card vid rv" href="https://youtu.be/iTRFg5OwnOU" data-embed="https://www.youtube.com/embed/iTRFg5OwnOU?autoplay=1&rel=0" target="_blank" rel="noopener"><div class="play"><i></i></div><span class="pill">YouTube</span><h3>Premiere Pro Show Reel</h3><p>A quick look at my editing work.</p><span class="link">Watch reel &#9654;</span></a>
+<a class="card vid rv" href="https://drive.google.com/file/d/1AJ3j26-VUDvToB5apCZSvRrIuziVuLDs/view?usp=sharing" data-embed="https://drive.google.com/file/d/1AJ3j26-VUDvToB5apCZSvRrIuziVuLDs/preview" target="_blank" rel="noopener"><div class="play"><i></i></div><span class="pill">Short edit</span><h3>Alchemist: Survival Story</h3><p>A short-form story edit.</p><span class="link">Watch video &#9654;</span></a>
+<a class="card vid rv" href="https://drive.google.com/file/d/1Og0U7QblAD9j8iqB2ocuJntPWct4dwDm/view?usp=sharing" data-embed="https://drive.google.com/file/d/1Og0U7QblAD9j8iqB2ocuJntPWct4dwDm/preview" target="_blank" rel="noopener"><div class="play"><i></i></div><span class="pill">Brand video</span><h3>MILER: Return &amp; Exchange</h3><p>Brand video for the clothing label MILER.</p><span class="link">Watch video &#9654;</span></a>
 </div></div></section>
 
 <section id="design"><div class="w">
 <span class="eyebrow">Graphic design</span><h2>Selected design work</h2>
 <p class="sub">Movie posters, brand ads and event posters. Tap any piece to view it larger.</p>
-<div class="filters"><button class="f on" data-f="all">All</button><button class="f" data-f="movie">Movie Posters</button><button class="f" data-f="brand">Brand Ads</button><button class="f" data-f="event">Events</button></div>
+<div class="filters"><button class="f on" data-f="all">All</button><button class="f" data-f="brand">Brand Ads</button><button class="f" data-f="event">Events</button><button class="f" data-f="movie">Movie Posters</button></div>
 <div class="gal" id="gal">
-<figure class="work rv" data-cat="movie"><img src="images/animal.jpg" alt="ANIMAL - Movie poster"><figcaption><b>ANIMAL</b><span>Movie poster</span></figcaption></figure>
-<figure class="work rv" data-cat="event"><img src="images/nrithya-2025.jpg" alt="Nrithya 2025 - KL University Dance Club"><figcaption><b>Nrithya 2025</b><span>KL University Dance Club</span></figcaption></figure>
-<figure class="work rv" data-cat="movie"><img src="images/sita-ramam.jpg" alt="Sita Ramam - Movie poster"><figcaption><b>Sita Ramam</b><span>Movie poster</span></figcaption></figure>
-<figure class="work rv" data-cat="brand"><img src="images/nissan-magnite-1.jpg" alt="Nissan Magnite - Naman Nissan feature post"><figcaption><b>Nissan Magnite</b><span>Naman Nissan feature post</span></figcaption></figure>
-<figure class="work rv" data-cat="brand"><img src="images/arks-mid-top.jpg" alt="ARKS Mid Top - Sneaker ad"><figcaption><b>ARKS Mid Top</b><span>Sneaker ad</span></figcaption></figure>
-<figure class="work rv" data-cat="movie"><img src="images/sathyam-sundaram.jpg" alt="Sathyam Sundaram - Movie poster"><figcaption><b>Sathyam Sundaram</b><span>Movie poster</span></figcaption></figure>
-<figure class="work rv" data-cat="brand"><img src="images/kk-construction.jpg" alt="KK Construction - Real estate ad"><figcaption><b>KK Construction</b><span>Real estate ad</span></figcaption></figure>
-<figure class="work rv" data-cat="event"><img src="images/arijit-singh.jpg" alt="Arijit Singh - Concert poster"><figcaption><b>Arijit Singh</b><span>Concert poster</span></figcaption></figure>
-<figure class="work rv" data-cat="brand"><img src="images/nissan-magnite-2.jpg" alt="Nissan Magnite Offer - Naman Nissan offer post"><figcaption><b>Nissan Magnite Offer</b><span>Naman Nissan offer post</span></figcaption></figure>
-
+<figure class="work" data-cat="brand"><img width="1000" height="1250" src="images/nissan-magnite-1.jpg" alt="Nissan Magnite - Naman Nissan feature post"><figcaption><b>Nissan Magnite</b><span>Naman Nissan feature post</span></figcaption></figure>
+<figure class="work" data-cat="brand"><img width="1000" height="1250" src="images/nissan-magnite-2.jpg" alt="Nissan Magnite Offer - Naman Nissan offer post"><figcaption><b>Nissan Magnite Offer</b><span>Naman Nissan offer post</span></figcaption></figure>
+<figure class="work" data-cat="brand"><img width="1000" height="1250" src="images/arks-mid-top.jpg" alt="ARKS Mid Top - Sneaker ad"><figcaption><b>ARKS Mid Top</b><span>Sneaker ad</span></figcaption></figure>
+<figure class="work" data-cat="brand"><img width="1000" height="1000" src="images/kk-construction.jpg" alt="KK Construction - Real estate ad"><figcaption><b>KK Construction</b><span>Real estate ad</span></figcaption></figure>
+<figure class="work" data-cat="event"><img width="1000" height="1250" src="images/nrithya-2025.jpg" alt="Nrithya 2025 - KL University Dance Club"><figcaption><b>Nrithya 2025</b><span>KL University Dance Club</span></figcaption></figure>
+<figure class="work" data-cat="event"><img width="1000" height="1250" src="images/arijit-singh.jpg" alt="Arijit Singh - Concert poster"><figcaption><b>Arijit Singh</b><span>Concert poster</span></figcaption></figure>
+<figure class="work" data-cat="movie"><img width="1000" height="1250" src="images/animal.jpg" alt="ANIMAL - Movie poster"><figcaption><b>ANIMAL</b><span>Movie poster</span></figcaption></figure>
+<figure class="work" data-cat="movie"><img width="1000" height="1250" src="images/sita-ramam.jpg" alt="Sita Ramam - Movie poster"><figcaption><b>Sita Ramam</b><span>Movie poster</span></figcaption></figure>
+<figure class="work" data-cat="movie"><img width="1000" height="1250" src="images/sathyam-sundaram.jpg" alt="Sathyam Sundaram - Movie poster"><figcaption><b>Sathyam Sundaram</b><span>Movie poster</span></figcaption></figure>
 </div></div></section>
 
 <section id="toolkit"><div class="w">
 <span class="eyebrow">Toolkit</span><h2>Tools I work with</h2>
 <p class="sub">My design and video stack, plus working knowledge of code.</p>
 <div class="grid g3">
-<div class="card rv"><h3>Photoshop</h3><p>Ad creatives, social posts, store screenshots.</p></div>
-<div class="card rv"><h3>Premiere Pro</h3><p>Video editing for content and ads.</p></div>
-<div class="card rv"><h3>After Effects</h3><p>Motion graphics and animation.</p></div>
-<div class="card rv"><h3>Figma</h3><p>UI design, layouts and mockups.</p></div>
-<div class="card rv s2"><span class="pill">Basic coding</span><h3>HTML · CSS · JavaScript</h3><p>Working knowledge, enough to build, tweak and deploy responsive websites like the ones above. Not an expert, and always learning.</p></div>
+<div class="card rv"><div class="ico" style="background:#001e36;color:#31a8ff">Ps</div><h3>Photoshop</h3><p>Ad creatives, social posts, store screenshots.</p></div>
+<div class="card rv"><div class="ico" style="background:#1a0033;color:#ea77ff">Pr</div><h3>Premiere Pro</h3><p>Video editing for content and ads.</p></div>
+<div class="card rv"><div class="ico" style="background:#1a0033;color:#9999ff">Ae</div><h3>After Effects</h3><p>Motion graphics and animation.</p></div>
+<div class="card rv"><div class="ico" style="background:#1e1e1e;color:#f24e1e">Fi</div><h3>Figma</h3><p>UI design, layouts and mockups.</p></div>
+<div class="card rv"><div class="ico" style="background:#0e1a3a;color:#00c4cc">Ca</div><h3>Canva</h3><p>Quick social posts, thumbnails and layouts.</p></div>
+<div class="card rv"><div class="ico" style="background:#1b1b22;color:#ffd166">&lt;/&gt;</div><h3>HTML · CSS · JavaScript</h3><p>Working knowledge: enough to build, tweak and deploy responsive websites. Not an expert, always learning.</p></div>
+</div>
+<h3 class="subh">AI generation tools</h3><p class="sub" style="margin-bottom:22px">AI tools I use to speed up and extend creative production.</p>
+<div class="grid g3">
+<div class="card rv"><div class="ico" style="background:#1a0a2e;color:#b388ff">Hg</div><h3>HeyGen</h3><p>AI avatar and talking-video generation.</p></div>
+<div class="card rv"><div class="ico" style="background:#0a1f1a;color:#4ade80">Oa</div><h3>OpenArt</h3><p>AI image generation and creative visuals.</p></div>
+<div class="card rv"><div class="ico" style="background:#0d1b33;color:#60a5fa">Fl</div><h3>Google Flow</h3><p>AI video and filmmaking from text prompts.</p></div>
 </div></div></section>
 
 <section id="about"><div class="w"><div class="grid g2" style="align-items:start">
@@ -233,18 +282,44 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--ac);outline-offset:
 <a class="btn p" href="mailto:Kishanchowdarykamini@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/kishan-chowdary-kamini-418a9029b/" target="_blank" rel="noopener">LinkedIn</a></div>
 © 2026 Kishan Chowdary Kamini</div></footer>
 
+<div class="vm" id="vm" hidden><div class="vbox"><iframe id="vf" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen title="Video player"></iframe></div><a id="vo" class="link" target="_blank" rel="noopener">Open in a new tab &#8599;</a><button aria-label="Close">&times;</button></div>
 <div class="lb" id="lb" hidden><img id="lbi" alt=""><button aria-label="Close">&times;</button></div>
 <script>
 var lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
 document.addEventListener('click',function(e){var i=e.target.closest('.work img,.shots img');if(i){lbi.src=i.src;lbi.alt=i.alt;lb.hidden=false}});
 lb.onclick=function(){lb.hidden=true};
 document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.hidden=true});
-document.querySelectorAll('.f').forEach(function(b){b.onclick=function(){document.querySelectorAll('.f').forEach(function(x){x.classList.remove('on')});b.classList.add('on');var f=b.dataset.f;document.querySelectorAll('#gal [data-cat]').forEach(function(el){el.hidden=!(f==='all'||el.dataset.cat===f)})}});
+document.querySelectorAll('.f').forEach(function(b){b.onclick=function(){document.querySelectorAll('.f').forEach(function(x){x.classList.remove('on')});b.classList.add('on');var f=b.dataset.f;document.querySelectorAll('#gal [data-cat]').forEach(function(el){el.hidden=!(f==='all'||el.dataset.cat===f)});layout()}});
 var bg=document.getElementById('burger'),mn=document.getElementById('menu');
 bg.onclick=function(){var o=mn.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
 mn.onclick=function(e){if(e.target.closest('a')){mn.classList.remove('open');bg.setAttribute('aria-expanded',false)}};
 function route(){var h=location.hash,a=h.indexOf('#/appstore')===0;document.getElementById('home').hidden=a;document.getElementById('appstore').hidden=!a;if(a){window.scrollTo(0,0)}else if(h.length>1){var t=document.getElementById(h.slice(1));if(t)t.scrollIntoView()}else{window.scrollTo(0,0)}}
 addEventListener('hashchange',route);route();
+
+(function(){var I=document.getElementById('intro');if(!I)return;var R=document.documentElement;if(!R.classList.contains('intro-on')){I.remove();return}
+var c=document.getElementById('ic'),x=c.getContext('2d'),w,h,P=[];function rs(){w=c.width=innerWidth;h=c.height=innerHeight}rs();addEventListener('resize',rs);
+for(var i=0;i<Math.min(70,Math.floor(innerWidth/18));i++)P.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.5,vy:(Math.random()-.5)*.5});
+function f(){if(!I.isConnected)return;x.clearRect(0,0,w,h);P.forEach(function(p,i){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1;x.fillStyle='rgba(255,90,110,.8)';x.fillRect(p.x,p.y,2,2);for(var j=i+1;j<P.length;j++){var q=P[j],d=Math.hypot(p.x-q.x,p.y-q.y);if(d<120){x.strokeStyle='rgba(255,90,110,'+.25*(1-d/120)+')';x.beginPath();x.moveTo(p.x,p.y);x.lineTo(q.x,q.y);x.stroke()}}});requestAnimationFrame(f)}f();
+var nm=document.getElementById('nm');'KISHAN CHOWDARY KAMINI'.split('').forEach(function(ch,i){var s=document.createElement('span');s.textContent=ch===' '?'\u00a0':ch;s.style.animationDelay=(.5+i*.06)+'s';nm.appendChild(s)});
+var L=['Initializing creative engine','Loading design \u00b7 video \u00b7 ads','Compiling projects','Ready'],st=document.getElementById('st'),k=0,t=setInterval(function(){k++;if(k<L.length)st.textContent=L[k]},800);
+function end(){clearInterval(t);if(I.classList.contains('out'))return;I.classList.add('out');try{sessionStorage.setItem('intro','1')}catch(e){}setTimeout(function(){R.classList.remove('intro-on');I.remove()},950)}
+setTimeout(end,3500);document.getElementById('skip').onclick=end;setTimeout(function(){R.classList.remove('intro-on')},8000)})();
+var gal=document.getElementById('gal'),works=[].slice.call(gal.children);
+function layout(){var n=innerWidth<=860?2:3,cols=[],h=[];gal.innerHTML='';for(var i=0;i<n;i++){var c=document.createElement('div');c.className='gcol';gal.appendChild(c);cols.push(c);h.push(0)}
+works.forEach(function(f){if(f.hidden)return;var im=f.querySelector('img'),r=im.getAttribute('height')/im.getAttribute('width'),k=h.indexOf(Math.min.apply(null,h));cols[k].appendChild(f);h[k]+=r+.04})}
+var lw=innerWidth;layout();addEventListener('resize',function(){var a=innerWidth<=860,b=lw<=860;lw=innerWidth;if(a!==b)layout()});
+var vm=document.getElementById('vm'),vf=document.getElementById('vf'),vo=document.getElementById('vo');
+document.querySelectorAll('a.vid').forEach(function(a){a.onclick=function(e){e.preventDefault();vf.src=a.dataset.embed;vo.href=a.href;vm.hidden=false}});
+function vc(){vm.hidden=true;vf.src='about:blank'}
+vm.addEventListener('click',function(e){if(e.target===vm||e.target.tagName==='BUTTON')vc()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!vm.hidden)vc()});
+var pr=document.getElementById('prog');addEventListener('scroll',function(){var d=document.documentElement,m=d.scrollHeight-d.clientHeight;pr.style.width=(m>0?d.scrollTop/m*100:0)+'%'},{passive:true});
+function cu(el){var t=+el.dataset.to,d=+(el.dataset.dec||0),p=el.dataset.pre||'',sf=el.dataset.suf||'',t0=null;function st(ts){t0=t0||ts;var k=Math.min((ts-t0)/1400,1),v=t*(1-Math.pow(1-k,3));el.textContent=p+v.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d})+sf;if(k<1)requestAnimationFrame(st)}requestAnimationFrame(st)}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){cu(x.target);io.unobserve(x.target)}})});document.querySelectorAll('[data-to]').forEach(function(e){io.observe(e)})}
+if(matchMedia('(hover:hover) and (pointer:fine)').matches){var cd=document.createElement('div'),cr=document.createElement('div');cd.id='cd';cr.id='cr';document.body.appendChild(cd);document.body.appendChild(cr);var mx=0,my=0,rx=0,ry=0,on=false;
+addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;if(!on){on=true;rx=mx;ry=my;cd.style.opacity=cr.style.opacity=1}cd.style.transform='translate3d('+mx+'px,'+my+'px,0) translate(-50%,-50%)';cr.classList.toggle('h',!!e.target.closest('a,button,.work,.shots img,.vid'))});
+document.addEventListener('mouseleave',function(){cd.style.opacity=cr.style.opacity=0;on=false});
+(function t(){rx+=(mx-rx)*.16;ry+=(my-ry)*.16;cr.style.transform='translate3d('+rx+'px,'+ry+'px,0) translate(-50%,-50%)';requestAnimationFrame(t)})()}
 </script>
 </body>
 </html>
